@@ -25,10 +25,10 @@ Try different sets of hyperparameters
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
 |model|hpo1|hpo2|hpo3|score|
 |--|--|--|--|--|
-|initial|default|default|default|1.4|
-|add_features|default|default|default|0.47463|
-|hpo|'max_base_models': 25|max_base_models_per_type': 5|'save_bag_folds': True| 0.50257|
-
+|initial|default|default|default|1.39023|
+|add_features|default|default|default|0.47399|
+|hpo|'max_base_models': 25|max_base_models_per_type': 5|'save_bag_folds': True| 0.50247|
+ 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
 ![model_train_score.png](model_train_score.png)
@@ -40,4 +40,4 @@ TODO: Replace the image below with your own.
 ![model_test_score.png](model_test_score.png)
 
 ## Summary
-The exercise shows the importance of feature engineering, the capabilities of AutoML and the challenges with Hyperparameter tuning.
+The exercise shows the importance of feature engineering, the capabilities of AutoML and the challenges with Hyperparameter tuning. The biggest improvement in model performance comes from adding new information to the model, sometimes this new information can be extracted from already existing fields in our data. In this exercise we are supplied with a date field which is just a string field, by tranforming into datetime and creating additional fields (hour, day, month) we add new information to the model. It was interesting to scratch the surface of what AutoGluon can offer. As a DS/MLE it is difficult to keep track of the models and parameters needed to achive a good model performance. At the end, tuning parameters was not an easy task as it is still time consuming and not always produce good results.
