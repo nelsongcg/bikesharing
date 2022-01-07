@@ -35,9 +35,7 @@ Try different sets of hyperparameters
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
-TODO: Replace the image below with your own.
-
 ![model_test_score.png](model_test_score.png)
 
 ## Summary
-The exercise shows the importance of feature engineering, the capabilities of AutoML and the challenges with Hyperparameter tuning. The biggest improvement in model performance comes from adding new information to the model, sometimes this new information can be extracted from already existing fields in our data. In this exercise we are supplied with a date field which is just a string field, by tranforming into datetime and creating additional fields (hour, day, month) we add new information to the model. It was interesting to scratch the surface of what AutoGluon can offer. As a DS/MLE it is difficult to keep track of the models and parameters needed to achive a good model performance. At the end, tuning parameters was not an easy task as it is still time consuming and not always produce good results.
+The exercise shows the importance of feature engineering, the capabilities of AutoML and the challenges with Hyperparameter tuning. The biggest improvement in model performance comes from adding new information to the model, sometimes this new information can be extracted from already existing fields in our data. In this exercise we are supplied with a date field which is just a string field, by tranforming into datetime and creating additional fields (hour, day, month) we add new information to the model. It was interesting to scratch the surface of what AutoGluon can offer. As a DS/MLE it is difficult to keep track of the models and parameters needed to achive a good model performance. At the end, tuning parameters was not an easy task as it is still time consuming and not always produce good results. We could see a small incremement in performance and it seems that the the number of folds had a positive impact.
