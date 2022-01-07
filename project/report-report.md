@@ -25,10 +25,10 @@ Try different sets of hyperparameters
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
 |model|hpo1|hpo2|hpo3|score|
 |--|--|--|--|--|
-|initial|default|default|default|1.39023|
-|add_features|default|default|default|0.47399|
-|hpo|'max_base_models': 25|max_base_models_per_type': 5|'save_bag_folds': True| 0.50247|
- 
+|initial|default|default|default|1.38948|
+|add_features|default|default|default|0.55452|
+|hpo|'max_base_models': 25|max_base_models_per_type': 5|'save_bag_folds': True| 0.49883|
+
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
 ![model_train_score.png](model_train_score.png)
